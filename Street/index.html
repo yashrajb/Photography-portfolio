@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Street Photography | Yashraj Photography</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/jpg" href="images/Untitled-2.jpg">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+<link rel="stylesheet" href="main-stylesheet.css">
+  </style>
+</head>
+<body>
+
+		<nav class="navbar navbar-default navbar-fixed-top">
+		  <div class="container-fluid">
+			<div class="navbar-header">
+			  <a class="button" data-toggle="collapse" data-target=".collapse"></a>
+			  <a class="main-logo" href="index.html"><img src="images/Untitled-2.jpg"></a>
+			  <a class="hidden-xs" href="index.html"><h1 class="hidden-xs" style="display:inline-block;">Yashraj Photography</h1></a>
+			  
+			</div>
+			<ul class="nav navbar-nav navbar-right social-media hidden-xs">
+			  <li><a href="#"><img class="fb" src="images/facebook-white.png"></a></li>
+			  <li><a href="#"><img class="in" src="images/Instagram_App_Large_May2016_200.png"></a></li>
+			</ul>
+		  </div>
+		</nav>
+
+
+		  
+		<div id="navbar" class="collapse navbar-fixed-top">
+		<div class="container">
+
+			<ul>
+				
+				<li><a href="Object/">Object</a></li>
+				<li><a href="Nature/">Nature</a></li>
+				<li><a href="javascript:void(0);">Street</a></li>
+				<li><a href="http://localhost/bootstap/Random/">Random</a></li>
+				<li><a href="#">About me</a></li>
+			</ul>
+		</div>
+		</div>
+
+
+<div class="slideshow-container">
+  
+   <div class="mySlides fade-1">
+
+    <img src="images/1-min.JPG" style="width:100%">
+    
+  </div>
+   <div class="mySlides fade-1">
+
+    <img src="images/2-min.JPG" style="width:100%">
+    
+  </div>
+  <div class="mySlides fade-1">
+
+    <img src="images/3-min.JPG" style="width:100%">
+    
+  </div>
+  <div class="mySlides fade-1">
+
+    <img src="images/4-min.JPG" style="width:100%">
+    
+  </div>
+ 
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+
+  
+  
+ 
+ 
+</main>
+<footer>
+	<div class="container">
+		<ul>
+			<li><a href=""><i class="fa fa-facebook-official" style="font-size:48px;color:white"></i></a></li>
+			<li><a href=""><i class="fa fa-instagram" style="font-size:48px;color:white"></i></a></li>
+			<li><a href=""><i class="fa fa-github" style="font-size:48px;color:white"></i></a></li>
+		</ul>
+	</div>
+	<p style="text-align:center;">Designed and developed by <a href="">Yashraj Basan</a></p> 
+</footer>
+
+
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1} 
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none"; 
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block"; 
+  dots[slideIndex-1].className += " active";
+}
+
+
+</script>
+
+
+
+</body>
+</html>
